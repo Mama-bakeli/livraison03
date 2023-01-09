@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 550px;
+    background: url('images/computer.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #28023d;
+    font-family: century gothic;
+    font-size: large;
+    text-align: center;
+    color: #687777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ----------------la partie statistiques avec des chiffres qui augmentent progressivement */
+
+.counter-section {
+    height: 300px;
+    background-image: url('images/background.webp');
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sous-counter-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.counter-value {
+    font-size: 100px;
+}
+
+
+/* --------------------------  la barre orange      ------------------------ */
+
+.menu {
+    background-color: #ffad01;
+    height: 100px;
+    width: 90%;
+    border-radius: 1%;
+    margin-top: 10px;
+    color: white;
+    font-family: century gothic;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+}
+
+
+/* ----------------------------------Bouton de téléchargement du cv--------------- */
+
+.download {
+    height: 30px;
+    width: 150px;
+    background-color: #ffad01;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    border-radius: 1%;
+    left: 500px;
+    transition: 1s;
+}
+
+.download:hover {
+    transform: scale(1.1);
+}
+
+
+/* ----------------------------cadre photo et etat civil ----------------------- */
+
+.cadre {
+    height: 500px;
+    width: 600px;
+    background-color: white;
+    position: relative;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* le div de la photo */
+
+
+/* ---------------------------div blanc----------------------- */
+
+.blanc {
+    height: 500px;
+    width: 100%;
+}
+
+
+/* ------------------------image contenue dans le cercle------------------- */
+
+.cercle img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 50px;
+}
+
+
+/* .cercle {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+
+/* --------------------la partie portfolio my work------------------------------ */
+
+.portfolio {
+    height: 2500px;
+    /* background-color: grey; */
+}
+
+
+/* ---------------------------------------------- */
+
+
+/* ------------------------la partie education-------------------------------- */
+
+.education-section {
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*----------------section prtfolio----------------------------*/
+
+.experience-section {
+    height: 500px;
+    background-color: gainsboro;
+}
+
+.workexperience {
+    height: 1000px;
+    background-color: #28023d;
+}
+
+.orange {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 171, 0, 0.5);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.transparent {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: rgb(255, 171, 0);
+    /* margin-bottom: -10px;
+    margin-left: 5px; */
+}
+
+.ligne {
+    width: 2px;
+    height: 300px;
+    background-color: #687777;
+}
+
+.centre {
+    width: 400px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.sociaux {
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: #887392;
+    margin-right: 20px;
+    animation: 1s;
+    cursor: pointer;
+}
+
+.sociaux:hover {
+    transform: scale(1.1);
+    background-color: #ffad01;
+}
+
+.reseaux {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box .percent svg circle {
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 1;
+    stroke: #000;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+.box .percent svg circle:nth-child(1) {
+    stroke-dashoffset: calc(440 - (440*87)/100);
+    stroke: black;
+}

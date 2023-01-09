@@ -1,0 +1,765 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    height: 550px;
+    background: url('images/computer.jpg');
+    background-size: cover;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu {
+    background-color: #ffad01;
+    height: 100px;
+    width: 90%;
+    border-radius: 1%;
+    margin-top: 10px;
+    color: white;
+    font-family: century gothic;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+}
+
+
+/* ----------------------------------Bouton de téléchargement du cv--------------- */
+
+#download {
+    height: 30px;
+    width: 150px;
+    background-color: #ffad01;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    border-radius: 1%;
+    left: 400px;
+    transition: 1s;
+}
+
+#download:hover {
+    transform: scale(1.1);
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    color: #fff;
+}
+
+.menu-items1 {
+    width: 200px;
+    padding-left: 15px;
+}
+
+.menu-items2 {
+    width: 200px;
+    padding-left: 15px;
+}
+
+.menu-items3 {
+    width: 200px;
+    padding-left: 15px;
+}
+
+#download a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.keyaccount {
+    color: #ffad01;
+    margin-top: 1px;
+    text-align: center;
+}
+
+.centre ul {
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.portfolio {
+    margin-top: 200px;
+}
+
+.portfolio .haut {
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio .haut .gauche {
+    margin-left: 50px
+}
+
+.mywork {
+    color: rgb(153, 153, 153);
+}
+
+.portfolio .haut .droite {
+    margin-left: 400px;
+    margin-top: 40px;
+}
+
+.portfolio .haut .droite a {
+    text-decoration: none;
+    color: #333;
+}
+
+.droite_about {
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-right: 80px;
+}
+
+.droite_about p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 100px;
+    color: #8d7777;
+}
+
+.projetterminé {
+    width: 60px;
+}
+
+.txt {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 100px;
+    color: #8d7777;
+}
+
+.mywork1 {
+    color: #FFA804;
+}
+
+.mywork2 {
+    color: white;
+}
+
+.grad {
+    display: flex;
+    align-items: center;
+}
+
+.grad h2 {
+    color: black;
+}
+
+.port {
+    display: flex;
+}
+
+.port h2 {
+    color: black;
+}
+
+.cadre img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 10px;
+}
+
+.sociaux {
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: #887392;
+    margin-right: 20px;
+    animation: 1s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.sociaux:hover {
+    transform: scale(1.1);
+    background-color: #ffad01;
+}
+
+.reseaux {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadre {
+    height: 350px;
+    width: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+}
+
+.centre {
+    width: 400px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.droite a:hover {
+    color: #ffad01;
+}
+
+.image-grid {
+    width: 100%;
+    --gap: 16px;
+    --num-cols: 6;
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.education {
+    margin-top: 100px;
+    background-color: white;
+    width: 100%;
+}
+
+.education .haut {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.education .haut .gauche {
+    margin-left: 50px;
+}
+
+.education .haut .droite {
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.por {
+    display: flex;
+}
+
+.aboutme {
+    margin-top: 100px;
+}
+
+.haut_about {
+    display: flex;
+    flex-direction: row;
+}
+
+.gauche_about {
+    margin-left: 50px
+}
+
+.por h2 {
+    color: black;
+}
+
+.image-grid>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+
+.image-grid-row-2 {
+    grid-row: span 2;
+}
+
+#img2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#img8 {
+    grid-column-start: 5;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#img10 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#img9 {
+    grid-column-start: 5;
+    grid-column-end: -1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+
+/* ----------------la partie statistiques avec des chiffres qui augmentent progressivement */
+
+.counter-section {
+    height: 300px;
+    background-image: url('images/background.webp');
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sous-counter-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.counter-value {
+    font-size: 100px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #28023d;
+    font-family: century gothic;
+    font-size: large;
+    text-align: center;
+    color: #687777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orange {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 171, 0, 0.5);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.transparent {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: rgb(255, 171, 0);
+    /* margin-bottom: -10px;
+    margin-left: 5px; */
+}
+
+.ligne {
+    width: 2px;
+    height: 300px;
+    background-color: #687777;
+}
+
+
+/* css cercle barre  */
+
+.bloc-cercle-progress {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.progress {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+
+.progress:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 7px solid #f2f5f5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress .progress-left {
+    left: 0;
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 7px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progress .progress-right {
+    right: 0;
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: leadingOne 1.8s linear forwards;
+}
+
+.progress .progress-value {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+    position: absolute;
+}
+
+.progress.blue .progress-bar {
+    border-color: #fdc426;
+}
+
+.progress.blue .progress-left .progress-bar {
+    animation: leandingTwo 1.5s linear forwards 1.8s;
+}
+
+.progress.yellow .progress-bar {
+    border-color: #fdc426;
+}
+
+.progress.yellow .progress-left .progress-bar {
+    animation: leandingThree 1s linear forwards 1.8s;
+}
+
+.progress.pink .progress-bar {
+    border-color: #fdc426;
+}
+
+.progress.pink .progress-left .progress-bar {
+    animation: leandingFor 0.4s linear forwards 1.8s;
+}
+
+.progress.green .progress-bar {
+    border-color: #fdc426;
+}
+
+.progress.green .progress-left .progress-bar {
+    animation: leandingFive 1.2s linear forwards 1.8s;
+}
+
+@keyframes leadingOne {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes leandingTwo {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+
+@keyframes leandingThree {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+.barreorange {
+    height: 10px;
+    width: 50px;
+    border-radius: 5px;
+    background: #FFA804;
+}
+
+@keyframes leandingFor {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+
+.workexperience {
+    margin-top: 100px;
+    background-color: #28023d;
+    width: 100%;
+}
+
+.workexperience .haut {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.workexperience .haut .gauche {
+    margin-left: 50px;
+}
+
+.workexperience .haut .droite {
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.workexperience .haut .droite p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 100px;
+    color: white;
+}
+
+.ul {
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width:560px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 450px;
+    }
+    .image-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio .haut {
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio .haut .droite {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .haut_about {
+        display: flex;
+        flex-direction: column;
+    }
+    .droite_about {
+        margin-left: 2px;
+    }
+    .droite_about p {
+        margin-left: 20px;
+        width: 400px;
+        text-align: justify;
+    }
+    .bloc-cercle-progress {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .education .haut .droite p {
+        width: 100%;
+    }
+    .counter-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sous-counter-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .counter-value {
+        font-size: 25px;
+    }
+    .valeur {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    .projetterminé {
+        width: 100%;
+    }
+    #download {
+        position: relative;
+        left: 5px;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:561px) {
+    .menu {
+        width: 90%;
+    }
+    .menu-items {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: space-between;
+    }
+    .portfolio .haut {
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio .haut .droite {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-left: 50px;
+    }
+    .counter-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sous-counter-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .counter-value {
+        font-size: 25px;
+    }
+    .valeur {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    .projetterminé {
+        width: 100%;
+    }
+    .portfolio .haut {
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio .haut .droite {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+    }
+    .haut_about {
+        display: flex;
+        flex-direction: column;
+    }
+    .droite_about {
+        margin-left: 2px;
+    }
+    .droite_about p {
+        margin-left: 20px;
+        width: 600px;
+        text-align: justify;
+    }
+    .txt {
+        margin-left: 20px;
+        width: 600px;
+        text-align: justify;
+    }
+    .education .haut .droite {
+        display: flex;
+        flex-direction: column;
+    }
+    .workexperience {
+        width: 768px;
+    }
+    .workexperience .haut .droite {
+        display: flex;
+        flex-direction: column;
+    }
+    #download {
+        position: relative;
+        left: 5px;
+    }
+}
